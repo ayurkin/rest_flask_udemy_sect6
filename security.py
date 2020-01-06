@@ -11,6 +11,3 @@ def authenticate(username, password):
 def identify(payload):
     user_id = payload['identity']
     return UserModel.find_by_id(user_id)
-
-
-
